@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER DATA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-container">
+       
+        <form class="form">
+            <input type="text" class="city" placeholder="Enter City">
+            <button class="search-btn"><i class="material-icons">search</i></button>
+        </form>
+
+        <div class="data-city">
+            <h1 id="city-name">Ahmedabad</h1>
+            <p id="para">sun feb 25 2024</p>
+        </div>
+
+        <div class="temprature">
+            <div class="description">
+                <i class="material-icons change-icon">cloud</i>
+                <span class="temp-temp">smoke</span>
+            </div>
+            <div class="temp">20°</div>
+        </div>
+
+        <div class="card">
+
+            <div class="wind-card">
+                <i class="material-icons">air</i>
+                <div>
+                    <div class="speed">2 KW/H</div>
+                    <div class="wind-label">wind</div>
+                </div>
+            </div>
+
+            <div class="humanity-card">
+                <i class="material-icons">water_drop</i>
+                <div>
+                    <div class="huminity">30%</div>
+                    <div class="huminity-label">humidity</div>
+                </div>
+            </div>
+
+            <div class="visibility-card">
+                <i class="material-icons">visibility</i>
+                <div>
+                    <div class="vs-distance">4 KM/H</div>
+                    <div class="visibility">visibility</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<script src="./main.js"></script>
+</body>
+
+</html>

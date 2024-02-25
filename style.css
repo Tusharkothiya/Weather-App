@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: rgb(109, 176, 202); */
+    background: url("https://miro.medium.com/v2/resize:fit:5120/1*GsImz-edoeuqCMfKxDus0w.jpeg") no-repeat center;
+
+}
+
+.weather-container{
+    /* background-color: #75b4e3; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* border: 1px solid black; */
+    padding: 40px;
+    border-radius: 10px;
+    width: 550px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input[type="text"]{
+    /* flex: 1; */
+    border: 1px solid black;
+    padding: 20px;
+    outline: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 400px;
+    opacity: 0.5;
+}
+
+input[type="text"]:active{
+    border: 3px solid black;
+}
+
+.search-btn{
+    background-color: #4192c9;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 5px;
+    transition: all 0.1s;
+    outline: none;
+}
+
+
+
+.search-btn:active{
+    background-color: #3498db;
+    color: black;
+    border: 1px solid black
+}
+
+.data-city{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#city-name{
+    font-size: 2rem;
+    opacity: 0.6;
+
+}
+
+#para{
+    padding: 5px 10px;
+}
+
+.temprature{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.temprature .description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.temprature .description i{
+    font-size: 1.5rem;
+    opacity: 0.6;
+    transition: opacity 0.5s ease-in-out, font-size 0.5s ease-in-out;
+}
+
+.temprature .temp{
+    font-size: 6rem;
+    color: #f7f3f3;
+    opacity: 1.5;
+    transition: color 0.5s ease-in-out;
+}
+
+.card{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.wind-card , .humanity-card , .visibility-card{
+    text-align: center;
+    /* display: flex; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 5px;
+    gap: 15px;
+    /* border: 1px solid black; */
+    border-radius: 100px;
+    background-color: #fff;
+    opacity: 0.5;
+    padding: 20px 20px;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(19, 19, 19, 0.1), 0 8px 16px rgba(8, 8, 8, 0.2);
+    /* background-color: #65b2e6; */
+}
+
+.card i{
+    font-size: 2.5rem;
+    opacity: 0.6;
+}
+
+.wind-card div, 
+.humanity-card div, 
+.visibility-card div{
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    /* color: red; */
+}
+
+
